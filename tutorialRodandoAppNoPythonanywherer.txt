@@ -1,0 +1,40 @@
+*********ASSIM FUNCIONA (faz o clone) PORÉM A PASTA NÃO FICA NO LUGAR CERTO
+git clone https://github.com/projetospyton2025/py-DownlodsModalidadesLoterias.git
+
+
+
+*********TESTANDO ESTA MODO MAS ANTE APAGUE A PASTA
+__pycache__
+e o arquivo *.py
+
+
+Gerando o Token
+No GitHub em:
+Usuário cliqeue em
+Settings
+Developer Settings
+Personal Acess Tokens 
+Fine-grained tokens
+Generate new Token
+Dê um nome para ele.. 
+
+
+*********CRIE UM AMBIENTE VIRTUAL
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+
+
+********* NA CONSOLE DO pythonanywhere
+git init 
+git pull https://github.com/projetospyton2025/py-DownlodsModalidadesLoterias.git
+ProjetosPython
+Senha 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
+
+Instale os requerimentos
+pip install -r requirements.txt
+
+
+
+Abra o app.py e atualize.. pronto rodando!!!
