@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  
-  <!--ALTERAR O CAMINHO ABSOLUTO OU VER AQUELE JEITO DE COMPARTILHAR O ARQUIVO-->
-  <link rel="stylesheet" href="/static/css/styles.css">
-  <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
 
 </head>
@@ -55,7 +52,6 @@
         <li><a href="https://jogodamegasenaia.netlify.app" target="_blank" class="w3-button w3-black">Mega Sena - IA</a></li>
         <li><a href="https://jogodaquinaia.netlify.app/" target="_blank" class="w3-button w3-black">Quina - IA</a></li>
 
-        <!-- other links -->
       </ul>
     </div>
 
@@ -68,22 +64,10 @@
   <button id="download-button" class="w3-button w3-black">Baixar Todos os Resultados</button>
 
 
-<!--COLOCAR ESTE CÓDIGO NO ARQUIVO SCRIPT.JS-->
-      <script>
-        document.getElementById('download-button').addEventListener('click', function() {
-          fetch('/download', { method: 'POST' })
-            .then(response => response.json())
-            .then(data => alert(data.message))
-            .catch(error => alert('Erro ao fazer o download: ' + error.message));
-        });
-      </script>
-    
 
 
 
-        <!--ALTERAR O CAMINHO ABSOLUTO OU VER AQUELE JEITO DE COMPARTILHAR O ARQUIVO-->
-       <script defer src="/static/js/script.js"></script>
-         <!--<script defer src="{{ url_for('static', filename='js/script.js') }}"></script>-->
+         <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
 
   </body>
 </html>

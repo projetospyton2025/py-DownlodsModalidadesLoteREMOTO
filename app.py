@@ -7,8 +7,8 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/download', methods=['POST'])
-#@app.route('curl -X POST https://ProjetosPython.pythonanywhere.com/download', methods=['POST'])
+#@app.route('/download', methods=['POST'])
+@app.route('curl -X POST https://ProjetosPython.pythonanywhere.com/download', methods=['POST'])
 
 def download():
     message = download_script.download_files()
